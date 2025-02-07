@@ -1,17 +1,4 @@
-import { DM_Sans, Work_Sans } from "next/font/google";
-import "./globals.css";
-
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
-
-const workSans = Work_Sans({
-  variable: "--font-work-sans",
-  subsets: ["latin"],
-  weight: ["400", "600"],
-});
+import "../globals.css";
 
 export const metadata = {
   title: "ArchVision - AI-Powered Architecture Insights",
@@ -45,7 +32,7 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content={metadata.openGraph.url} />
         <meta name="keywords" content={metadata.keywords} />
       </head>
-      <body className={`${dmSans.variable} ${workSans.variable} antialiased bg-background text-textPrimary`}>
+      <body className="antialiased bg-background text-textPrimary">
         {children}
       </body>
     </html>

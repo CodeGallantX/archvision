@@ -1,25 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "react-icons/fa";
 import { FaSearch, FaChartBar, FaCube } from "react-icons/fa";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
     <div className="bg-background text-textPrimary">
       {/* Hero Section */}
-      <header className="text-center py-24 px-6 max-w-5xl mx-auto">
-        <h1 className="text-5xl font-bold leading-tight">
-          ArchVision: AI-Powered Architecture Insights
-        </h1>
-        <p className="text-lg text-secondary mt-4 max-w-3xl mx-auto">
-          Leverage AI for real-time analytics, predictive modeling, and 3D visualization to transform your architectural projects.
-        </p>
-        <div className="mt-6 flex justify-center gap-4">
-          <Button className="px-6 py-3 text-lg">Get Started</Button>
-          <Button variant="outline" className="px-6 py-3 text-lg">
-            Learn More
-          </Button>
-        </div>
-      </header>
+      <Header />
 
       {/* Features Section */}
       <section className="py-20 px-6 grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
